@@ -25,6 +25,11 @@
         public const string MEDIUM_PUBLISH_STATUS = "public";
 
         //////////////////////////////////////////////////////////Twitter//////////////////////////////////////////////////////////
+        /// <summary>
+        /// twitter app consumer key
+        /// obtained by making an app https://apps.twitter.com/app
+        /// and going to this page https://apps.twitter.com/app/15680402/keys
+        /// </summary>
         public const string TWITTER_CONSUMER_KEY = "q6rRzunVWsmPdTlxB2zKgw2Ke";
         public const string TWITTER_CONSUMER_SECRET = "cCMHFJ9xvWFrGrKYiJibkjjVbwgfCpB8PU0u22vafTDoijOuO3";
         public const string TWITTER_ACCESS_TOKEN = "2655346412-CW99hvyJr5RJ9TjFYenfLZ4zq1NIBjptWNz0tl6";

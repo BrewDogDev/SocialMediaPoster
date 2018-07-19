@@ -1,9 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace SocialMediaPoster
 {
     public class Program
@@ -38,6 +33,19 @@ namespace SocialMediaPoster
             if (post.GetSocialMedia().Contains("Twitter"))
             {
                 Posters.TwitterPoster.Post(post);
+            }
+            if (post.GetSocialMedia().Contains("Facebook"))
+            {
+                //do nothing cuz this doesnt exist yet
+            }
+            if (post.GetSocialMedia().Contains("Tumblr"))
+            {
+                //do nothing cuz this doesnt exist yet
+            }
+            if (post.GetSocialMedia().Contains("Instagram"))
+            {
+                //do nothing cuz this doesnt exist yet
+                //also may never exist cuz not sure if instagram lets you do that
             }
 
         }
