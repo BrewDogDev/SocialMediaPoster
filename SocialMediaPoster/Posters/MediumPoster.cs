@@ -3,11 +3,11 @@ namespace SocialMediaPoster.Posters
 {
     public class MediumPoster
     {   
-        static void Post(Classes.Post post)
+        public static void Post(Classes.Post post)
         {
-            Post(post.GetTitle(),post.GetBody(),"","");
+            Post(post.GetTitle(), Utilities.MakeHtml(post.GetBody()), post.GetUrl(), Utilities.FormatTags(post.GetTags()));
         }
-        static void Post(string title, string body, string url, string tags)
+        private static void Post(string title, string body, string url, string tags)
         {
             var client = new RestClient("https://api.medium.com/v1/users/" + Config.MEDIUM_USER_ID + "/posts");
             var request = new RestRequest(Method.POST);
@@ -28,6 +28,8 @@ namespace SocialMediaPoster.Posters
 
             IRestResponse response = client.Execute(request);
         }
+
+        
     }
 }
 

@@ -6,6 +6,7 @@
     /// </summary>
     class Config
     {
+        //////////////////////////////////////////////////////////Medium//////////////////////////////////////////////////////////
         /// <summary>
         /// User ID of a medium user, 
         /// obtained by sending post request to https://api.medium.com/v1/me, 
@@ -22,5 +23,12 @@
         /// how to post will be published on Medium valid entries: public, draft, unlisted
         /// </summary>
         public const string MEDIUM_PUBLISH_STATUS = "public";
+
+        //////////////////////////////////////////////////////////Twitter//////////////////////////////////////////////////////////
+        public const string TWITTER_CONSUMER_KEY = "q6rRzunVWsmPdTlxB2zKgw2Ke";
+        public const string TWITTER_CONSUMER_SECRET = "cCMHFJ9xvWFrGrKYiJibkjjVbwgfCpB8PU0u22vafTDoijOuO3";
+        public const string TWITTER_ACCESS_TOKEN = "2655346412-CW99hvyJr5RJ9TjFYenfLZ4zq1NIBjptWNz0tl6";
+        public const string TWITTER_TOKEN_SECRET = "L76Buslt4ktatLdZnKgcoL9Qk8fonQsoXFw66vs3MFrHF";
+
     }
 }

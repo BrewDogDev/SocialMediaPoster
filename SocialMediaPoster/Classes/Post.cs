@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SocialMediaPoster.Classes
 {
-    class Post
+    public class Post
     {
         private string title;
         private string body;
@@ -137,5 +137,6 @@ namespace SocialMediaPoster.Classes
         {
             socialMediaList.Remove(tagToRemove);
         }
+        
     }
 }
